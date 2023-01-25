@@ -29,12 +29,16 @@ $VeryDarkBlue: hsl(240, 100%, 5%);
       gap: 1rem;
       h1 {
         color: $GrayishBlue;
+        font-weight: 700;
+        font-size: xx-large;
       }
       h3 {
         color: $VeryDarkBlue;
+        font-weight: 800;
+        font-size: 16px;
 
         &:hover {
-          color: $SoftOrange;
+          color: $SoftRed;
           transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
         }
       }
