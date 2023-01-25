@@ -1,0 +1,47 @@
+$SoftOrange: hsl(35, 77%, 62%);
+$SoftRed: hsl(5, 85%, 63%);
+$OffWhite: hsl(36, 100%, 99%);
+$GrayishBlue: hsl(233, 8%, 79%);
+$DarkGrayishBlue: hsl(236, 13%, 42%);
+$VeryDarkBlue: hsl(240, 100%, 5%);
+
+.bottom {
+  margin-top: 4rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .bottom-container {
+    display: flex;
+    justify-content: space-between;
+    //align-items: flex-start;
+    gap: 1.6rem;
+
+    .image-container {
+      img {
+        height: 9.4rem;
+        object-fit: contain;
+      }
+    }
+    .bottom-news {
+      display: grid;
+      justify-content: space-evenly;
+      gap: 1rem;
+      h1 {
+        color: $GrayishBlue;
+      }
+      h3 {
+        color: $VeryDarkBlue;
+
+        &:hover {
+          color: $SoftOrange;
+          transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
+        }
+      }
+      p {
+        line-height: 24px;
+        color: $DarkGrayishBlue;
+      }
+    }
+  }
+}
