@@ -1,5 +1,8 @@
 import React from "react";
 import "./bottomNews.scss";
+import bottomImage1 from "../../assets/image-retro-pcs.jpg";
+import bottomImage2 from "../../assets/image-top-laptops.jpg";
+import bottomImage3 from "../../assets/image-gaming-growth.jpg";
 
 function BottomNews({ bottomData }) {
   const bottomNews = bottomData.map((data) => {
