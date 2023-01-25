@@ -8,4 +8,36 @@ $VeryDarkBlue: hsl(240, 100%, 5%);
 .new-section-container {
   background-color: $VeryDarkBlue;
   color: $OffWhite;
+
+  .contents {
+    padding: 1.6rem 1.2rem 0 1.2rem;
+    h1 {
+      color: $SoftOrange;
+      font-size: 2.3rem;
+    }
+
+    .news-sub {
+      margin: 2rem 0;
+      h3 {
+        color: $OffWhite;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+          color: $SoftOrange;
+          transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s;
+        }
+      }
+      p {
+        font-size: 14px;
+        color: $GrayishBlue;
+        line-height: 24px;
+      }
+    }
+    hr {
+      border: none;
+      height: 1px;
+      color: $DarkGrayishBlue;
+      background-color: $DarkGrayishBlue;
+    }
+  }
 }

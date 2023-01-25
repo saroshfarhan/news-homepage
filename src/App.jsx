@@ -4,6 +4,7 @@ import MainSection from "./components/mainSection/mainSection";
 import NewSection from "./components/newSection/newSection";
 
 import "./App.scss";
+import newData from "../newData.json";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Navbar />
       <div className="upper-main-container">
         <MainSection />
-        <NewSection />
+        <NewSection newData={newData} />
       </div>
     </div>
   );
