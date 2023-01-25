@@ -1,0 +1,55 @@
+$SoftOrange: hsl(35, 77%, 62%);
+$SoftRed: hsl(5, 85%, 63%);
+$OffWhite: hsl(36, 100%, 99%);
+$GrayishBlue: hsl(233, 8%, 79%);
+$DarkGrayishBlue: hsl(236, 13%, 42%);
+$VeryDarkBlue: hsl(240, 100%, 5%);
+
+.main-image {
+  img {
+    height: 20rem;
+    object-fit: cover;
+  }
+}
+.news {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6rem;
+  margin-top: 1.8rem;
+
+  .headline {
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 3rem;
+    }
+  }
+
+  .content {
+    display: grid;
+    justify-content: space-between;
+    p {
+      color: $DarkGrayishBlue;
+      line-height: 24px;
+    }
+    button {
+      margin-top: 2rem;
+      width: 12rem;
+      height: 3rem;
+      border-radius: 0;
+      border: none;
+      background-color: $SoftRed;
+      color: $OffWhite;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 3px;
+
+      &:hover {
+        background-color: $VeryDarkBlue;
+        transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
